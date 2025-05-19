@@ -3,6 +3,9 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+kubectl
+minikube-darwin-arm64
+
 
 ### STS ###
 .apt_generated
