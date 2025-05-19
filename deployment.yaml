@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shopping-list-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shopping-list
+  template:
+    metadata:
+      labels:
+        app: shopping-list
+    spec:
+      containers:
+        - name: shopping-list
+          image: shopping-list-manager:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
